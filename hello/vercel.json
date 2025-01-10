@@ -1,14 +1,9 @@
 
 {
-    "builds": [{
-        "src": "hello/wsgi.py",
-        "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
-    }],
-    "routes": [
+    "rewrites" : [
         {
-            "src": "/(.*)",
-            "dest": "hello/wsgi.py"
+            "source" : "/(.*)",
+            "destination" : "/imdex.html"
         }
     ]
 }
