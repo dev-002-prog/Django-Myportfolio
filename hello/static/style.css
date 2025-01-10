@@ -1,0 +1,165 @@
+@import url("https://use.typekit.net/ygj5abd.css");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    background-color: rgb(124, 116, 116);
+    width: 10vw;
+    height: 83.5vh;
+    padding: 4%;
+}
+
+.sidebar ul {
+    font-size: 2rem;
+}
+
+.sidebar ul li {
+    margin: 2rem 0rem;
+    list-style: none;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight:500 ;
+}
+
+.intro {
+    height: 60vh;
+    width: 60vw;
+    background-color: yellow;
+    display: flex;
+    padding: 2rem 2rem 0rem 2rem;
+    font-family: "alegreya-sc", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+.image img{
+    height: 75vh;
+    margin-top: -15vh;
+}
+
+.msg{
+    display: flex;
+    flex-direction: column;
+}
+.greet {
+    font-size: 3.5rem;
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    width: 30vw;
+}
+
+.ques {
+    font-size: 1.5rem;
+}
+
+.desig {
+    font-size: 1.5rem;
+}
+
+.main {
+    display: flex;
+    margin: auto;
+    background-color:black ;
+}
+
+.button{
+    height: 3.5vh;
+    width: 10vw;
+    border-radius: 5px;
+    margin-top: 1vh;
+    cursor: pointer;
+    background-color: aquamarine;
+    color: black;
+}
+
+.button:hover{
+    color: aquamarine;
+    background-color: black;
+}
+
+.socialmedia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 4vh;
+    font-style: normal;
+    font-family: none;
+}
+.logo img{
+    width: 1.5vw;
+    margin-top: .5vh;
+}
+
+@media screen and (max-width:455px) {
+    .intro {
+        height: 70vh;
+        width: 44rem;
+        background-color: yellow;
+        flex-direction: column;
+        font-family: "alegreya-sc", serif;
+        font-weight: 700;
+        font-style: italic;
+    }
+    .content{
+        flex-direction: column;
+    }
+
+    .sidebar{
+        width: 46rem;
+        height: 5rem;
+ 
+    }
+
+    .sidebar ul{
+        display: flex;
+    }
+
+    .sidebar ul li{
+        margin-left: 1rem;
+    }
+
+    .sidebar ul li a{
+        text-decoration: none;
+        color: black;
+        font-weight:none ;
+        font-size: 1.5rem;
+    }
+
+    .image img{
+        height: 80vh;
+        margin-top: 15vh;
+        margin-left: 25vw;
+    }
+
+    .name {
+        font-size: 2.5rem;
+        font-weight: bold;
+        width: 45rem;
+    }
+
+    .button{
+        height: 3.5vh;
+        width: 15rem;
+        border-radius: 5px;
+        margin-top: 1vh;
+        cursor: pointer;
+        background-color: aquamarine;
+        color: black;
+    }
+
+    .logo img{
+        width: 5vw;
+        margin-top: .5vh;
+    }
+}

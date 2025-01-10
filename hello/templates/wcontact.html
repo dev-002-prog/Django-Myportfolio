@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, userscalable=no"> 
+    <title>MY PORTFOLIO</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'wcontact.css'%}">
+</head>
+
+<body>
+    <div class="content">
+        <div class="sidebar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="intro.html">My Intro</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="media.html">Media links</a></li>
+                <li><a href="wcontact.html">Contact Me</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="contactform">
+                <h1>Contact for work OR general enquires</h1>
+                <form method="post" action="/wcontact.html">
+                    {% csrf_token %}
+                    <div id="emailHelp" class="form-text" style="font-size: smaller; color: blue;">We'll never share your email &
+                        phone with anyone else.
+                    </div>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="name" class="form-control" id="name" name="name" aria-describedby="nameHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="phone" class="form-control" id="phone" name="phone">
+                    </div>
+                    <div class="mb-3">
+                        <label for="enquiry" class="form-label">enquiry</label>
+                        <input type="feedback" class="form-control" id="enquiry" name="enquiry" placeholder="How can i Help you?">
+                    </div>
+                    <button type="submit" class="button ">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

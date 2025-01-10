@@ -1,0 +1,109 @@
+@import url("https://use.typekit.net/ygj5abd.css");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    background-color: rgb(124, 116, 116);
+    width: 50vw;
+    height: 83.5vh;
+    padding: 4%;
+}
+
+.sidebar ul {
+    font-size: 2rem;
+}
+
+.sidebar ul li {
+    margin: 2rem 0rem;
+    list-style: none;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight:500 ;
+}
+
+.main{
+    padding: 5rem 4.8em;
+    background-color: burlywood ;
+}
+
+.box{
+    height: 18vh;
+    width: 19vw;
+    background-color: rgb(225, 13, 193);
+    border-radius: 1rem;
+    text-align: center;
+    padding: 2vh 2vw;
+    font-size: large;
+    margin: 0 .5vw;
+}
+
+.row{
+    display: flex;
+    margin-top:10vh ;
+}
+
+h1{
+    font-size:4rem;
+    text-align: center;
+}
+
+@media screen and (max-width:455px) {
+
+    .content{
+        flex-direction: column;
+    }
+
+    .sidebar{
+        width: 46rem;
+        height: 5rem;
+ 
+    }
+
+    .sidebar ul{
+        display: flex;
+    }
+
+    .sidebar ul li{
+        margin-left: 1rem;
+    }
+
+    .sidebar ul li a{
+        text-decoration: none;
+        color: black;
+        font-weight:none ;
+        font-size: 1.5rem;
+    }
+
+
+    .main{
+        width: 38.5rem;
+        height: 100rem;
+    }
+
+    .row{
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    .box{
+        height: 15vh;
+        width: 30rem;
+        margin-top: 2rem;
+        margin-left: 3rem;
+        justify-content: center;
+    }
+
+    h1{
+        margin-bottom: 3rem;
+    }
+
+}

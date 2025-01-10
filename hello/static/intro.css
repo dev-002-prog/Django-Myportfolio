@@ -1,0 +1,109 @@
+@import url("https://use.typekit.net/ygj5abd.css");
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    background-color: rgb(124, 116, 116);
+    width: 14.8vw;
+    height: 185vh;
+    padding: 4%;
+}
+
+.sidebar ul {
+    font-size: 2rem;
+}
+
+.sidebar ul li {
+    margin: 2rem 0rem;
+    list-style: none;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight:500 ;
+}
+
+.main{
+    width: 116vw;
+    padding: 2vh 2vh;
+    background-color:antiquewhite;
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+}
+
+.seek{
+    display: flex;
+    align-items: center;
+}
+
+.full{
+    width: 20vw;
+    height: 1.5vh;
+    border-radius: 3rem ;
+    background-color: red;
+
+}
+.ft{
+    width: 10vw;
+    height: 1.5vh;
+    border-radius: 3rem ;
+    background-color: blue;
+
+}
+
+.et{
+    width: 15vw;
+    height: 1.5vh;
+    border-radius: 3rem ;
+    background-color: rgb(0, 255, 89);
+}
+
+@media screen and (max-width:455px) {
+
+    .content{
+        flex-direction: column;
+    }
+
+    .sidebar{
+        width: 46rem;
+        height: 5rem;
+ 
+    }
+
+    .sidebar ul{
+        display: flex;
+    }
+
+    .sidebar ul li{
+        margin-left: 1rem;
+    }
+
+    .sidebar ul li a{
+        text-decoration: none;
+        color: black;
+        font-weight:none ;
+        font-size: 1.5rem;
+    }
+
+    .main{
+        width: 46rem;
+        padding: 2vh 2vh;
+        background-color:antiquewhite;
+        font-family: "PT Sans", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: large;
+    }
+
+
+}
